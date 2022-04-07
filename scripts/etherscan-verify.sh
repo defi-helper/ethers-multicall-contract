@@ -26,4 +26,4 @@ esac
 done
 set -- "${POSITIONAL[@]}"
 
-npx hardhat etherscan-verify --network ${NETWORK} --api-key ${ETHERSCAN_API_KEY}
+npx hardhat etherscan-verify --network ${NETWORK} --api-key ${ETHERSCAN_API_KEY} --license GPL-3.0
