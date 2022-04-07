@@ -35,6 +35,13 @@ module.exports = {
       blockGasLimit: 6_000_000,
       accounts: [process.env.MOONRIVER_DEPLOYER],
     },
+    optimism: {
+      url: process.env.OPTIMISM_NODE || "http://127.0.0.1:8545",
+      chainId: 10,
+      gasPrice: 1_000_000,
+      blockGasLimit: 6_000_000,
+      accounts: [process.env.OPTIMISM_DEPLOYER],
+    },
   },
   namedAccounts: {
     deployer: {
