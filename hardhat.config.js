@@ -28,6 +28,13 @@ module.exports = {
       blockGasLimit: 6_000_000,
       accounts: process.env.AVAX_TEST_DEPLOYER ? [process.env.AVAX_TEST_DEPLOYER] : [],
     },
+    moonbeam: {
+      url: process.env.MOONBEAM_NODE || "http://127.0.0.1:8545",
+      chainId: 1284,
+      gasPrice: 110_000_000_000,
+      blockGasLimit: 15_000_000,
+      accounts: process.env.MOONBEAM_DEPLOYER ? [process.env.MOONBEAM_DEPLOYER] : [],
+    },
     moonriver: {
       url: process.env.MOONRIVER_NODE || "http://127.0.0.1:8545",
       chainId: 1285,
