@@ -49,6 +49,13 @@ module.exports = {
       blockGasLimit: 6_000_000,
       accounts: process.env.OPTIMISTIC_DEPLOYER ? [process.env.OPTIMISTIC_DEPLOYER] : [],
     },
+    arbitrum: {
+      url: process.env.ARBITRUM_NODE || "http://127.0.0.1:8545",
+      chainId: 42161,
+      gasPrice: 100_000_000,
+      blockGasLimit: 15_000_000,
+      accounts: process.env.ARBITRUM_DEPLOYER ? [process.env.ARBITRUM_DEPLOYER] : [],
+    },
   },
   namedAccounts: {
     deployer: {
